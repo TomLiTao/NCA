@@ -1,8 +1,9 @@
 # NCA
-Neural Cellular Automata (NCA). Used primarily for modelling spatio-temporal patterning phenomena in my PhD research. See this pre-print: https://arxiv.org/abs/2310.14809 . Inspired by and based on the work of Mortvinstev et al: https://distill.pub/2020/growing-ca/ , this work extends their NCA framework to learn local rules that yield a time series of images, rather than growing one image from one pixel. This extension allows for modelling dynamical emergent behaviour, and can reproduce the behaviour of classic PDEs (heat, reaction diffusion).
+Neural Cellular Automata (NCA) are a class of models capable of learning local interactions that give a desired emergent behaviour. Inspired by and based on the work of Mortvinstev et al: https://distill.pub/2020/growing-ca/ , this work extends their NCA framework to learn local rules that yield a time series of images, rather than forming a stable stationary structure. This extension allows for modelling dynamical emergent behaviour, and can reproduce the behaviour of classic PDEs (heat, reaction diffusion). The code in this repository was used to produce results in this paper: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011589
 
 # How to use
-See the demo jupyter notebook. The code here was used for running experiments in https://arxiv.org/abs/2310.14809 , but moving forward a version based on JAX is included in https://github.com/AlexDR1998/Differentiable-Patterning
+ - This code is no longer in development, but is kept for reproducability of results in https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011589 . 
+ - Moving forward, a more flexible and powerful version based on JAX is included in https://github.com/AlexDR1998/Differentiable-Patterning
 
 ## Requirements 
  - tensorflow 2.13.0
