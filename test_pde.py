@@ -26,7 +26,7 @@ initial_condition[0, size[0]//2, size[1]//2, 0] = 1.0
 
 # Run the solver
 iterations = 1000
-step_size = 0.1
+step_size = 0.3
 trajectory = solver.run(iterations, step_size, initial_condition)
 
 # Create a directory to save the images
@@ -37,5 +37,5 @@ for i in range(0, iterations + 1, 100):  # Save every 100th step
     plt.imshow(trajectory[i, 0, :, :, 0], cmap='hot', interpolation='nearest')
     plt.title(f"Iteration {i}")
     plt.colorbar()
-    plt.savefig(f'visualizations/iteration_{i}.png')
+    plt.savefig(f'visualizations/Heat_equation_simulations_{i}.png')
     plt.close()  # Close the figure to avoid memory issues
